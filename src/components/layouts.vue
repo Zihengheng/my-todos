@@ -11,10 +11,11 @@
   export  default {};
 </script>
 <style>
-html * {margin:0; padding:0;}
 .body{
     position: absolute;
-    margin:0px 0px 0px 0px;
+    margin-top:0;
+    padding:0;
+    margin-bottom:0;
 }
 .container {
     display: flex;
@@ -24,11 +25,15 @@ html * {margin:0; padding:0;}
 .menu {
     width:30%;
     margin-top:0px;
-    background-color: ;
+    margin-bottom:0;
+    margin-left:0;
+    background-color:#99CCCC;
+    opacity:0.5;
 }
 .content-container{
     flex:1;
     width:70%;
-    background-color: aliceblue;
+    margin-bottom: 0;
+    background-color:white;
 }
 </style>

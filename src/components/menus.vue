@@ -36,7 +36,7 @@
         goList(id){//click menu
         this.todoId = id;
         },
-         addTodoList() { //add to do list
+          addTodoList() { //add to do list
           addTodo({}).then(data => {
           getTodoList({}).then(res => {
           const TODOS = res.data.todos;
@@ -45,7 +45,12 @@
         });
       });
     }
+      },
+      watch: {
+       'todoId'(id) {
+        this.$router.push({ name: 'todo', params: { id: id } });
       }
+    },
   };
 </script>
 <style lang="less">

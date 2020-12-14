@@ -1,5 +1,5 @@
 <template>
-  <div class="container page lists-show">
+  <div class="page lists-show">
       <nav><!-- nav-bar -->
       <div class="nav-group">
           <a class="nav-item">
@@ -9,7 +9,7 @@
       <h1 class="title-page">
           <span class="title-wrapper">{{todo.title}}</span>
           <!-- title -->
-          <span class="count-list">{{todo.count}}</span>
+          <span class="count-list">{{todo.count || 0}}</span>
           <!-- count -->
       </h1>
       <div class="nav-group right">
@@ -55,8 +55,6 @@ export default {
             },
             items:[
                 {checked:false,text:'new day yeah',isDelete:false},
-                {checked:false,text:'new day yeah',isDelete:false},
-                {checked:false,text:'new day yeah',isDelete:false},
             ],
             text:'' //new
         };
@@ -64,9 +62,8 @@ export default {
     methods:{
         onAdd(){
             this.items.push({
-        checked: false, text: this.text, isDelete: false
-      });
-      this.text = ''; //default value
+        checked: false, text: this.text, isDelete: false});
+         this.text = ''; //default value
         }
     },
 }

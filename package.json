@@ -11,14 +11,17 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "less": "^3.13.0",
     "less-loader": "^4.1.0",
+    "mockjs": "^1.1.0",
     "style-loader": "^2.0.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
+    "axios-mock-adapter": "^1.19.0",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",

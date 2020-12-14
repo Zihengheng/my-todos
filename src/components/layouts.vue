@@ -16,26 +16,4 @@
     };
 </script>
 <style>
-.body{
-    position: absolute;
-}
-.container {
-    display: flex;
-    margin-top: 0;
-    margin-bottom:0;
-    background-color:#315481;
-    height:700px;
-}
-.menu {
-    width:30%;
-    background-color:#99CCCC;
-    opacity:0.5;
-    margin-bottom:0;
-    height:100%;
-}
-.content-container{
-    width:70%;
-    margin-bottom: 0;
-    background-color:white;
-}
 </style>

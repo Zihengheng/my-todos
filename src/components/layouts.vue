@@ -1,6 +1,7 @@
 <template>
   <section class="container" > <!--最外层容器-->
     <section class="menu"> <!--左边的容器-->
+     <menus></menus> <!-- 引用menu组件-->
     </section>
     <section class="content-container"><!--右边的容器-->
     </section>
@@ -17,15 +18,13 @@
 <style>
 .body{
     position: absolute;
-    margin:0 0 0 0;
 }
 .container {
     display: flex;
     margin-top: 0;
     margin-bottom:0;
     background-color:#315481;
-    height:800px;
-
+    height:700px;
 }
 .menu {
     width:30%;
@@ -35,7 +34,6 @@
     height:100%;
 }
 .content-container{
-    flex:1;
     width:70%;
     margin-bottom: 0;
     background-color:white;

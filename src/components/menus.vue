@@ -16,4 +16,13 @@
   export default {};
 </script>
 <style>
+div .list-todos {
+    width:70%;
+    display:flex;
+    margin-top:20px;
+}
+
+div a .link-list-new{
+    display:block;
+}
 </style>

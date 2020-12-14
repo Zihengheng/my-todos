@@ -35,12 +35,17 @@
       <!-- end of the navbar -->
       <!-- start of the content part -->
       <div class="content-scrollable list-items">
+          <div v-for="item in items">
+              <item :item="item"></item>
+          </div>
       </div>
   </div>
 </template>
 
 <script>
+import item from './item.vue';
 export default {
+  components: { item },
     data(){
         return{
             todo:{

@@ -1,7 +1,7 @@
 <template>
   <div class="list-todos">  <!--菜单容器-->
       <a class="list-todo activeListClass list" 
-      v-for="item in items"> <!--单个菜单容器-->
+      v-for="item in items" :key="item.title"> <!--单个菜单容器-->
         <span class="icon-lock" v-show="item.locked"></span>  
         <!--锁的图标-->
         <span class="count-list" v-show="item.count">
